@@ -5,6 +5,8 @@
 
 int weight(int * vec, int n);
 int wt(int x);
+void add(int * d, int * s, int n);
 int poids(code cc);
+
 
 #endif

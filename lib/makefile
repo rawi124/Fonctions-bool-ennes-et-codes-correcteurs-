@@ -1,5 +1,5 @@
-libcodage.a : code.o poids.o RM.o inout.o
-	ar crs libcodage.a code.o poids.o RM.o inout.o
+libcodage.a : code.o poids.o RM.o inout.o decodage.o degre.o tbv.o anf.o
+	ar crs libcodage.a code.o poids.o RM.o inout.o decodage.o degre.o tbv.o anf.o
 
 code.o: code.c 
 	gcc -c -g -Wall code.c
@@ -11,3 +11,15 @@ RM.o: RM.c
 	
 inout.o : inout.c
 	gcc -c -g -Wall inout.c
+
+decodage.o : decodage.c
+	gcc -c -g -Wall decodage.c
+	
+code.o: anf.c 
+	gcc -c -g -Wall anf.c
+	
+code.o: degre.c 
+	gcc -c -g -Wall degre.c
+	
+code.o: tbv.c 
+	gcc -c -g -Wall tbv.c
