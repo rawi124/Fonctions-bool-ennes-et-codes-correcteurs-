@@ -6,5 +6,6 @@
 #include "poids.h"
 
 int degre(char *f, int m);
+void print(char*fct, int m);
 
 #endif

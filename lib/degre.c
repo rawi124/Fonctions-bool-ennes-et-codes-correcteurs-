@@ -18,5 +18,22 @@ int degre(char *f, int m){
 	}
 	ANF(f, 1 << m);
 	return res;
+	
+}
+
+void print(char*fct, int m){
+	int u, v, l;
+	printf("anf =");
+	ANF(fct, 1 << m);
+	for(u = 0; u < (1 <<m) ;u++)
+		if (fct[u]) { v = u; l ='a' ;
+			while(v){ if (v &1) putchar(l);
+			
+			l++;
+			v = v >> 1 ;}
+			putchar('+');
+		}
+	ANF( fct, 1 << m);
+	printf("\n");
 	}
 

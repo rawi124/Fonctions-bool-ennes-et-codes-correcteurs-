@@ -15,11 +15,11 @@ inout.o : inout.c
 decodage.o : decodage.c
 	gcc -c -g -Wall decodage.c
 	
-code.o: anf.c 
+anf.o: anf.c 
 	gcc -c -g -Wall anf.c
 	
-code.o: degre.c 
+degre.o: degre.c 
 	gcc -c -g -Wall degre.c
 	
-code.o: tbv.c 
+tbv.o: tbv.c 
 	gcc -c -g -Wall tbv.c

@@ -36,10 +36,12 @@ int main(int argc , char*argv[])
 	
 	src = fopen(argv[1], "r");
 	if(!src){
-		perror(" lire code : ");
+		perror("errrrrr ");
 		exit(1);}
-	while( fgets(ligne, 1024, src){
+	while( fgets(ligne, 1024, src)){
 		fct = tbv(ligne, 8);
 		if(degre(fct, 8) <= 5)
+			print(fct, 8);
+	}
 		
 }
