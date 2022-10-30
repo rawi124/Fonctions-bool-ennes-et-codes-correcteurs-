@@ -5,5 +5,6 @@
 
 code LireCode(char*src);
 void EcrireCode(char*dest , code cc);
+void LireFonction(char*s);
 
 #endif

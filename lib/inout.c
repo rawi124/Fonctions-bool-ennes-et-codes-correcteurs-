@@ -3,6 +3,7 @@
 
 #include "inout.h"
 #include "code.h"
+#include "decodage.h"
 
 code LireCode(char*src)
 {
@@ -88,3 +89,41 @@ void EcrireCode(char*dest , code cc)
    }
    fclose(fichier);
 }
+
+
+void LireFonction(char*s){
+	FILE * src ;
+	char * fct;
+	char ligne[1024];
+	
+	src = fopen(s, "r");
+	if(!src){
+		perror("errrrrr ");
+		exit(1);}
+	while( fgets(ligne, 1024, src)){
+		fct = tbv(ligne, 8);
+		if(degre(fct, 8) <= 5)
+			print(fct, 8);
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

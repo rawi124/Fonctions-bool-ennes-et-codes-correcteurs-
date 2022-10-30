@@ -20,12 +20,8 @@ int binomial(int k, int n){
 int rmdimension(int k, int n){
 	int i ;
 	int dim = 0 ;
-	for(i = 0 ; i <= k ; i++)
-	{
-		//printf("%d \n",binomial(i, n));
+	for(i = 0 ; i <= k ; i++)	
 		dim += binomial(i, n);
-	}
-	//printf("\n\n\n\n");
 	return dim ;
 }
 /*
