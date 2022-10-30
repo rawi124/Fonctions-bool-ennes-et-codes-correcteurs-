@@ -3,6 +3,11 @@
 
 #include "code.h"
 
+
+//nous travaillons avec les codes lineaires
+//un code lineaire si pour tout m, m' de  m+m' est dans C avce C un sous espace vecoriel de dimesnion k
+//distance et poids sont egaux car on est dans le cas d un code lineaire 
+//la distance min est inf ou egale a (n-k+1)
 code CreerCode(int k, int n){
   int i ;
   code res;

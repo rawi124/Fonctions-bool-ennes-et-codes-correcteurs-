@@ -12,13 +12,15 @@
 
 int main(int argc , char*argv[])
 {
-	//code rm = RM(1, 3);
+	code rm = RM(1, 2);
+	AfficherCode(rm);
+	int x = poids(rm);
+	printf("%d\n",x);
+	
 	//int dimension = rmdimension(2, 6);
 	//int cpt = 5 ;
-	//int x = distance(rm, &cpt, 5 );
 	//code cc = LireCode(argv[1]);
 	//EcrireCode(argv[1] ,rm);
-	//AfficherCode(rm);
 	//int p = poids(cc);
 	//int tab[3] = {1, 0, 1};
 	//int x = weight(tab, 3);
@@ -27,10 +29,10 @@ int main(int argc , char*argv[])
 	//int dimension = rmdimension(atoi(argv[1]), atoi(argv[2]));
 	//int x = atoi(argv[1]);
 	//int y = atoi(argv[2]);
-	//printf("%d\n",x);
 	
 	
-	FILE * src ;
+	
+	/*FILE * src ;
 	char * fct;
 	char ligne[1024];
 	
@@ -42,6 +44,7 @@ int main(int argc , char*argv[])
 		fct = tbv(ligne, 8);
 		if(degre(fct, 8) <= 5)
 			print(fct, 8);
-	}
+	
+	}*/
 		
 }
